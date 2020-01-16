@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Gelasio:400,600|Noto+Serif:400,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <div class="header-title">
+        <h1>The Code Review</h1>
+      </div>
+      <div class="newsletter-blurb">
+        <h3>Signup for our newsletter</h3>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+    </header>
+      <hr class="hr-line line-1"/>
+      <hr class="hr-line line-2"/>
+
+    <main>
+      <form action="" method="" class="">
+        <!-- action - where the form send data to -->
+        <!-- method - what HTTP method (get/post)-->
+
+        <h3 id="contact-info-title" class="">Contact Information</h3>
+
+        <div class="input-box-div">
+          <label for="full-name" class="label-text">
+            <span id="full-name">Full Name</span></label>
+            <br/>
+            <input type="text" name="full-name"  class="form-textbox" required></input>
+        </div>
+
+        <div class="input-box-div">
+          <label for="email" class="label-text">
+            <span id="email">Email Address</span><br/>
+            <input type="email" name="email"  class="form-textbox" required></input>
+          </label>
+        </div>
+
+        <div class="input-box-div">
+          <label for="phone-number" class="label-text">
+            <span>Phone Number</span><br/>
+            <input type="phone" name="phone-number" class="form-textbox" maxlength="10"></input>
+          </label>
+        </div>
+
+        <div class="input-box-div">
+          <label for="street-address" class="label-text">
+            <span>Street Address</span><br/>
+            <input type="text"  name="street-address" class="form-textbox"></input>
+          </label>
+        </div>
+
+        <div class="input-box-div">
+          <label for="city" class="label-text">
+            <span>City</span><br/>
+            <input type="text" name="city" class="form-textbox"></input>
+          </label>
+        </div>
+
+        <div class="input-box-div">
+          <label for="state" class="label-text"><span>State</span><br/>
+            <select class="" name="state" class="form-textbox" id="state-dropdown">
+              <option value="" disabled selected hidden>Choose State</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Distric of Columbia">Distric of Columbia</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland"></option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+        </div>
+
+          <div class="input-box-div">
+            <label for="zip-code" class="label-text"><span>Zip Code</span><br/>
+              <input type="text" name="zip-code" class="form-textbox zip-code-box" maxlength="5"></input>
+            </label>
+          </div>
+
+          <hr id="bottom-hr">
+
+          <div class="newsletter-web-options">
+            <h1 class="newsletter-title">Newsletter</h1>
+            <div class="">
+              <p>Select the newsletters you would like to receive</p>
+            </div>
+              <div class="checkbox-div">
+                <input type="checkbox" name="newsletter-type" class="newsletter-checkbox" value="html-news" checked></input>
+                <label for="html-news" class="checkbox-labels">HTML News</label>
+                <br>
+
+                <input type="checkbox" name="newsletter-type" class="newsletter-checkbox" value="css-news"></input>
+                <label for="css-news" class="checkbox-labels">CSS News</label>
+                <br>
+
+                <input type="checkbox" name="newsletter-type" class="newsletter-checkbox" value="javascript-news"></input>
+                <label for="javascript-news" class="checkbox-labels">JavaScript News</label>
+              </div>
+
+          <div class="newsletter-format-div">
+            <p>Newsletter format</p>
+            <div class="newsletter-radio-button-div">
+              <input type="radio" name="newsletter-format" checked></input>
+              <label for="html" class="newsletter-radio-buttons">HTML</label>
+              <br>
+
+              <input type="radio" name="newsletter-format"></input>
+              <label for="plain-text" class="newsletter-radio-buttons">Plain text</label>
+            </div>
+          </div>
+
+          <div class="other-topics">
+            <p>Other topics you'd like to hear about</p>
+            <textarea class="form-textbox other-topics-textbox" rows="4"></textarea>
+          </div>
+
+          <div class="button-div">
+            <button class="submit-button">Sign Up</button>
+          </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="">
+        <p>Copyright The Code Review</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
