@@ -219,7 +219,7 @@ body {
 }
 
 
-/***** ***** ***** ***** 768+px ***** ***** ***** *****/
+/***** ***** ***** ***** tablet / 768+px ***** ***** ***** *****/
 @media screen and (min-width: 768px) {
 
   div.header-title {
@@ -228,52 +228,84 @@ body {
   header h1 {
     font-size: 18px;
   }
-  
+  .newsletter-blurb h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
 /***** ***** form ***** *****/
+  form {
+    padding-left: 36px;
+    padding-right: 36px;
+    margin: 0;
+  }
   #contact-info-title {
-    padding-left: 23px;
+    padding-left: 0px;
     padding-bottom: 20px;
     font-size: 20px;
+    font-weight: bold;
   }
   .input-box-div {
-    width: 94%;
-    margin-bottom: 20px;
     padding: 0;
+    margin: 0 0 20px;
+    width: 100%;
   }
  
-  .label-text {
-    color: #242845;
-  }
   label, input {
     display: inline-block;
   }
   .form-textbox {
-    width: 80%;
-    margin-right: 0;
-    line-height: 3;
+    width: 65%;
+    line-height: 2.5;
   }
 
   .label-text {
-    width: 15%;
-    font-size: 14px;
-    margin-right: 28px;
+    width: 25%;
+    color: #242845;
+    font-size: 16px;
+    padding-right: 60px;
   }
-
+  #state-dropdown {
+    width: 65%;
+    line-height: 3;
+    font-size: 16px;
+    height: 51px;
+  }
+  option {
+    width: 65%;
+  }
   #state + #state-dropdown {
     display: inline-block;
   }
   #state-dropdown + .form-textbox {
-    width: 80%;
     margin-right: 0;
     line-height: 3;
   }
-
+  #zip-code {
+    padding-right: 20px;
+  }
+  #zip-code, .zip-code-box {
+    display: inline-block;
+  }
+  .zip-code-box {
+    width: 30%;
+    margin-right: 0px;
+  }
   .select-the-newsletter p, .checkbox-div, .newsletter-format-div p, .newsletter-radio-button-div, .other-topics p {
     color: #242845;
-
   }
-
-
+  /***** ***** below form & hr line ***** *****/
+  .newsletter-web-options h1 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .select-the-newsletter p {
+    margin-bottom: 5px;
+  }
+  .select-the-newsletter, .checkbox-div, .newsletter-radio-buttons {
+    font-size: 15px;
+  }
+  input[type=checkbox], .checkbox-labels {
+    margin-bottom: 7px;
 }
 
 
@@ -281,4 +313,9 @@ body {
 
 
 
-/***** *****/
+
+
+
+
+} /*****end of css*****/
+
